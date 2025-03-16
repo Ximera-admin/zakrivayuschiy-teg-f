@@ -2,8 +2,34 @@
   position: relative;
   border: 2px solid var(--accent-color);
   overflow: hidden;
+  background: white;
+  color: white;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
 }
 
 .button__text {
@@ -25,84 +51,20 @@
   transition: border-color 0.3s ease;
 }
 
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-  outline: none;
-  border: 2px solid #000000;
-}
-
 .card__like-button {
-  display: inline-block;
   min-width: 130px;
   min-height: 38px;
-  overflow: hidden;
-  background: white;
-  color: white;
-}
-
-.card__like-button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 #000000;
-  transition: box-shadow 0.3s ease;
-}
-
-.card__like-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000000;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-}
-
-.card__like-button:hover::before {
-  transform: scaleX(1);
 }
 
 .card__save-button {
-  display: flex;
-  position: relative;
   min-width: 335px;
   min-height: 51px;
-  overflow: hidden;
-  background: white;
-  color: white;
   gap: 8px;
 }
 
-.card__save-button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0 #000000;
-  transition: box-shadow 0.3s ease;
-}
-
-.card__save-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000000;
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-}
-
-.card__save-button:hover::before {
-  transform: scaleX(1);
-}
-
 .save__close-button {
-  display: block;
-  inline-size: 293px;
-  block-size: 38px;
-  background-color: transparent;
+  min-width: 293px;
+  min-height: 38px;
 }
 
 .save-icon-21-21 {
@@ -117,7 +79,7 @@
   align-self: center;
 }
 
-.save-icon-common-styles {
+.save-icon-animation {
    color: white;
    mix-blend-mode: difference;
    filter: brightness(0) invert(1);
