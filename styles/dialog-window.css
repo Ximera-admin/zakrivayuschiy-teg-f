@@ -1,8 +1,3 @@
-body:has(.dialog__window[open]) {
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
 .dialog__window[open] {
   position: fixed;
   flex-direction: column;

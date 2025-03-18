@@ -1,4 +1,5 @@
 .button {
+  display: flex;
   position: relative;
   border: 2px solid var(--accent-color);
   overflow: hidden;
@@ -51,6 +52,14 @@
   transition: border-color 0.3s ease;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: 2px solid var(--accent-color);
+}
+
 .card__like-button {
   min-width: 130px;
   min-height: 38px;
@@ -67,12 +76,19 @@
   min-height: 38px;
 }
 
-.save-icon-21-21 {
+.like-icon {
+  width: 36px;  
+  height: 39px;
+  cursor: pointer;
+}
+
+
+.save__button-icon {
   width: 21px;
   height: 21px;
 }
 
-.save-icon-39-39 {
+.save__dialog-icon {
   width: 39px;
   height: 39px;
   flex-shrink: 0;
@@ -89,10 +105,10 @@
   .card__save-button {
     flex-direction: column;
     min-width: 306px;
-    min-height: 80px;
+    min-height: 84px;
   }
 
-  .save-icon {
+  .save__button-icon {
     width: 28px;
     height: 28px;
   }
