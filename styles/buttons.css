@@ -72,8 +72,8 @@
 }
 
 .save__close-button {
-  min-width: 293px;
-  min-height: 38px;
+  inline-size: 100%;
+  block-size: 2.375rem;
 }
 
 .like-icon {
