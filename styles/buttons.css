@@ -77,11 +77,10 @@
 }
 
 .like-icon {
-  width: 36px;  
+  width: 36px;
   height: 39px;
   cursor: pointer;
 }
-
 
 .save__button-icon {
   width: 21px;
@@ -96,9 +95,9 @@
 }
 
 .save-icon-animation {
-   color: white;
-   mix-blend-mode: difference;
-   filter: brightness(0) invert(1);
+  color: white;
+  mix-blend-mode: difference;
+  filter: brightness(0) invert(1);
 }
 
 @media (width <= 375px) {
