@@ -1,16 +1,19 @@
-.dialog__window[open] {
-  position: fixed;
-  flex-direction: column;
+.dialog__window {
   font-family: var(--font-accent), Arial, sans-serif;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
-  inset: 0;
-  max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   border: 2px solid black;
-  padding: 31.5px;
   background-color: white;
-  overflow: hidden;
+}
+
+.dialog__window[open] {
+  display: flex;
+  flex-direction: column;
+  max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  padding: 31.5px;
+  position: fixed;
+  inset: 0;
 }
 
 .dialog__window[open]::backdrop {

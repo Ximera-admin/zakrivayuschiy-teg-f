@@ -18,4 +18,5 @@
   color: var(--font-main-color);
   background-image: var(--background-image);
   background-size: cover;
+  background-attachment: fixed;
 }

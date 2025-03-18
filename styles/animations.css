@@ -10,7 +10,7 @@
 
 */
 
-@keyframes heart {
+@keyframes pulse {
   from {
     scale: 1;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@keyframes sparks {
+@keyframes appearanceAndDisappearance {
   from {
     opacity: 0;
   }
@@ -28,6 +28,10 @@
   to {
     opacity: 1;
   }
+}
+
+.contour {
+  transition: fill 0.3s linear;
 }
 
 .main-body {
@@ -80,10 +84,10 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart 0.3s ease-in 0.1s;
+  animation: pulse 0.3s ease-in 0.1s;
   transform-origin: 23px 30% 10px;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s;
+  animation: appearanceAndDisappearance 0.3s ease-in 0.3s;
 }
